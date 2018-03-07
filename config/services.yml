@@ -1,0 +1,10 @@
+services:
+
+    para.command.sync:
+        class: Para\Plugin\Command\SyncCommand
+        arguments:
+            - '@para.sync.git_file_syncer'
+            - '@para.project_configuration'
+            - '@filesystem'
+        tags:
+            - { name: 'console.command', command: 'sync' }
