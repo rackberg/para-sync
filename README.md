@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/rackberg/para-sync.svg?branch=master)](https://travis-ci.org/rackberg/para-sync)
 [![Dependency Status](https://dependencyci.com/github/rackberg/para-sync/badge)](https://dependencyci.com/github/rackberg/para-sync)
+[![Coverage Status](https://coveralls.io/repos/github/rackberg/para-sync/badge.svg?branch=master)](https://coveralls.io/github/rackberg/para-sync?branch=master)
 [![Current Version](https://img.shields.io/badge/release-1.0.0-0e5487.svg)](https://github.com/rackberg/para-sync/releases)
 
 A plugin for the para console application to enable file syncing.
