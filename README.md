@@ -1,6 +1,6 @@
 # Para-Sync Plugin
 
-[![Build Status](https://travis-ci.org/rackberg/para-sync.svg?branch=master)](https://travis-ci.org/rackberg/para)
+[![Build Status](https://travis-ci.org/rackberg/para-sync.svg?branch=master)](https://travis-ci.org/rackberg/para-sync)
 [![Dependency Status](https://dependencyci.com/github/rackberg/para-sync/badge)](https://dependencyci.com/github/rackberg/para-sync)
 [![Current Version](https://img.shields.io/badge/release-1.0.0-0e5487.svg)](https://github.com/rackberg/para-sync/releases)
 
