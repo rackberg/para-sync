@@ -1,8 +1,8 @@
 <?php
 
-namespace Para\Plugin\EventSubscriber;
+namespace ParaSync\EventSubscriber;
 
-use Para\Plugin\Event\ApplyPatchEvent;
+use ParaSync\Event\ApplyPatchEvent;
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\ConsoleOutput;
@@ -12,7 +12,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * Class ApprovePatchApplyEventSubscriber.
  *
- * @package Para\Plugin\EventSubscriber
+ * @package ParaSync\EventSubscriber
  */
 class ApprovePatchApplyEventSubscriber implements EventSubscriberInterface
 {
@@ -32,7 +32,7 @@ class ApprovePatchApplyEventSubscriber implements EventSubscriberInterface
     /**
      * Callback method that will be executed before a patch will be applied.
      *
-     * @param \Para\Plugin\Event\ApplyPatchEvent $event
+     * @param \ParaSync\Event\ApplyPatchEvent $event
      *   The apply patch event.
      */
     public function beforePatchApply(ApplyPatchEvent $event)

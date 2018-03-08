@@ -1,9 +1,9 @@
 <?php
 
-namespace Para\Plugin\Command;
+namespace ParaSync\Command;
 
 use Para\Configuration\ProjectConfigurationInterface;
-use Para\Plugin\Sync\FileSyncerInterface;
+use ParaSync\Sync\FileSyncerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -14,14 +14,14 @@ use Symfony\Component\HttpFoundation\File\File;
 /**
  * Class SyncCommand.
  *
- * @package Para\Plugin\Command
+ * @package ParaSync\Command
  */
 class SyncCommand extends Command
 {
     /**
      * The git file syncer.
      *
-     * @var \Para\Plugin\Sync\FileSyncerInterface
+     * @var \ParaSync\Sync\FileSyncerInterface
      */
     private $fileSyncer;
 
@@ -42,7 +42,7 @@ class SyncCommand extends Command
     /**
      * SyncCommand constructor.
      *
-     * @param \Para\Plugin\Sync\FileSyncerInterface $fileSyncer
+     * @param \ParaSync\Sync\FileSyncerInterface $fileSyncer
      *   The git file syncer.
      * @param \Para\Configuration\ProjectConfigurationInterface $projectConfiguration
      *   The project configuration.

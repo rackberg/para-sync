@@ -1,13 +1,13 @@
 <?php
 
-namespace Para\Plugin\Event;
+namespace ParaSync\Event;
 
 use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class ApplyPatchEvent.
  *
- * @package Para\Plugin\Event
+ * @package ParaSync\Event
  */
 class ApplyPatchEvent extends Event
 {

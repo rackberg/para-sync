@@ -1,13 +1,13 @@
 <?php
 
-namespace Para\Plugin\Sync;
+namespace ParaSync\Sync;
 
 use Exception;
-use Para\Plugin\Event\ApplyPatchEvent;
-use Para\Plugin\Event\CompareHunksEvent;
-use Para\Plugin\Event\FinishedCopyEvent;
-use Para\Plugin\Event\FinishedSyncEvent;
-use Para\Plugin\Event\StartSyncEvent;
+use ParaSync\Event\ApplyPatchEvent;
+use ParaSync\Event\CompareHunksEvent;
+use ParaSync\Event\FinishedCopyEvent;
+use ParaSync\Event\FinishedSyncEvent;
+use ParaSync\Event\StartSyncEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\File;
@@ -17,7 +17,7 @@ use Symfony\Component\Process\Process;
 /**
  * Class GitFileSyncer.
  *
- * @package Para\Plugin\Sync
+ * @package ParaSync\Sync
  */
 class GitFileSyncer implements FileSyncerInterface
 {

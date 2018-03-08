@@ -1,14 +1,14 @@
 <?php
 
-namespace Para\Plugin\EventSubscriber;
+namespace ParaSync\EventSubscriber;
 
-use Para\Plugin\Event\CompareHunksEvent;
+use ParaSync\Event\CompareHunksEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
  * Class CompareHunksSubscriber.
  *
- * @package Para\Plugin\EventSubscriber
+ * @package ParaSync\EventSubscriber
  */
 class CompareHunksSubscriber implements EventSubscriberInterface
 {

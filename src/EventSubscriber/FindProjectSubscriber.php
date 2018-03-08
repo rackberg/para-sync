@@ -1,15 +1,15 @@
 <?php
 
-namespace Para\Plugin\EventSubscriber;
+namespace ParaSync\EventSubscriber;
 
-use Para\Plugin\Event\StartSyncEvent;
+use ParaSync\Event\StartSyncEvent;
 use Para\Service\ConfigurationManagerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
  * Class FindProjectSubscriber.
  *
- * @package Para\Plugin\EventSubscriber
+ * @package ParaSync\EventSubscriber
  */
 class FindProjectSubscriber implements EventSubscriberInterface
 {
@@ -48,7 +48,7 @@ class FindProjectSubscriber implements EventSubscriberInterface
      *
      * Will be executed when a start sync event has been triggered.
      *
-     * @param \Para\Plugin\Event\StartSyncEvent $event
+     * @param \ParaSync\Event\StartSyncEvent $event
      *   The start sync event.
      */
     public function findProject(StartSyncEvent $event)

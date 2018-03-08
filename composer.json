@@ -11,8 +11,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "Para\\Plugin\\": "src/",
-      "Para\\Plugin\\Tests\\": "tests/"
+      "ParaSync\\": "src/",
+      "ParaSync\\Tests\\": "tests/"
     }
   },
   "require-dev": {

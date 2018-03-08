@@ -1,13 +1,13 @@
 <?php
 
-namespace Para\Plugin\Sync;
+namespace ParaSync\Sync;
 
 use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * Interface FileSyncerInterface.
  *
- * @package Para\Plugin\Sync
+ * @package ParaSync\Sync
  */
 interface FileSyncerInterface
 {

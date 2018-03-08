@@ -1,6 +1,6 @@
 <?php
 
-namespace Para\Plugin\Event;
+namespace ParaSync\Event;
 
 use Para\Entity\ProjectInterface;
 use Symfony\Component\EventDispatcher\Event;
@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\File\File;
 /**
  * Class StartSyncEvent.
  *
- * @package Para\Plugin\Event
+ * @package ParaSync\Event
  */
 class StartSyncEvent extends Event
 {

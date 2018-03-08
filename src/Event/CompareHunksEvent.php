@@ -1,13 +1,13 @@
 <?php
 
-namespace Para\Plugin\Event;
+namespace ParaSync\Event;
 
 use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class CompareHunksEvent.
  *
- * @package Para\Plugin\Event
+ * @package ParaSync\Event
  */
 class CompareHunksEvent extends Event
 {

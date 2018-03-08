@@ -1,6 +1,6 @@
 <?php
 
-namespace Para\Plugin\Event;
+namespace ParaSync\Event;
 
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\HttpFoundation\File\File;
@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\File\File;
 /**
  * Class FinishedCopyEvent.
  *
- * @package Para\Plugin\Event
+ * @package ParaSync\Event
  */
 class FinishedCopyEvent extends Event
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Para\Plugin\Tests\Unit\Command;
+namespace ParaSync\Tests\Unit\Command;
 
 use Para\Configuration\ProjectConfigurationInterface;
 use Para\Entity\Project;
 use Para\Entity\ProjectInterface;
-use Para\Plugin\Command\SyncCommand;
-use Para\Plugin\Sync\GitFileSyncer;
+use ParaSync\Command\SyncCommand;
+use ParaSync\Sync\GitFileSyncer;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Symfony\Component\Console\Application;
@@ -16,7 +16,7 @@ use Symfony\Component\Filesystem\Filesystem;
 /**
  * Class SyncCommandTest.
  *
- * @package Para\Plugin\Tests\Unit\Command
+ * @package ParaSync\Tests\Unit\Command
  */
 class SyncCommandTest extends TestCase
 {
@@ -30,7 +30,7 @@ class SyncCommandTest extends TestCase
     /**
      * The git file syncer.
      *
-     * @var \Para\Plugin\Sync\FileSyncerInterface
+     * @var \ParaSync\Sync\FileSyncerInterface
      */
     private $gitFileSyncer;
 
