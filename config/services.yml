@@ -9,7 +9,7 @@ services:
             - { name: 'console.command', command: 'sync' }
 
     para.sync.git_file_syncer:
-        class: Para\Plugin\Service\Sync\GitFileSyncer
+        class: Para\Plugin\Sync\GitFileSyncer
         arguments:
             - '@event_dispatcher'
 
@@ -29,7 +29,7 @@ services:
             - { name: 'kernel.event_subscriber' }
 
     para.find_project_event_subscriber:
-        class: Para\EventSubscriber\FindProjectSubscriber
+        class: Para\Plugin\EventSubscriber\FindProjectSubscriber
         arguments: ['@para.yaml.configuration_manager']
         tags:
             - { name: 'kernel.event_subscriber' }
