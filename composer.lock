@@ -187,12 +187,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rackberg/para.git",
-                "reference": "f3116b7a465731f952803f58eac038e81506628b"
+                "reference": "f44af53707252a71a9757c8681239f88775160db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rackberg/para/zipball/f3116b7a465731f952803f58eac038e81506628b",
-                "reference": "f3116b7a465731f952803f58eac038e81506628b",
+                "url": "https://api.github.com/repos/rackberg/para/zipball/f44af53707252a71a9757c8681239f88775160db",
+                "reference": "f44af53707252a71a9757c8681239f88775160db",
                 "shasum": ""
             },
             "require": {
@@ -241,7 +241,7 @@
                 }
             ],
             "description": "A command-line tool for parallel execution of shell commands in multiple directories.",
-            "time": "2018-03-08T16:59:58+00:00"
+            "time": "2018-03-08T19:14:46+00:00"
         },
         {
             "name": "mikey179/vfsStream",

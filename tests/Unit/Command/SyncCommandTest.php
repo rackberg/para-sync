@@ -6,7 +6,7 @@ use Para\Configuration\ProjectConfigurationInterface;
 use Para\Entity\Project;
 use Para\Entity\ProjectInterface;
 use Para\Plugin\Command\SyncCommand;
-use Para\Service\Sync\GitFileSyncer;
+use Para\Plugin\Sync\GitFileSyncer;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Symfony\Component\Console\Application;
@@ -30,7 +30,7 @@ class SyncCommandTest extends TestCase
     /**
      * The git file syncer.
      *
-     * @var \Para\Service\Sync\FileSyncerInterface
+     * @var \Para\Plugin\Sync\FileSyncerInterface
      */
     private $gitFileSyncer;
 

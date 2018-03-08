@@ -1,13 +1,9 @@
 <?php
-/**
- * @file
- * Contains Para\Command\SyncCommand.php.
- */
 
 namespace Para\Plugin\Command;
 
 use Para\Configuration\ProjectConfigurationInterface;
-use Para\Service\Sync\FileSyncerInterface;
+use Para\Plugin\Sync\FileSyncerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -25,7 +21,7 @@ class SyncCommand extends Command
     /**
      * The git file syncer.
      *
-     * @var \Para\Service\Sync\FileSyncerInterface
+     * @var \Para\Plugin\Sync\FileSyncerInterface
      */
     private $fileSyncer;
 
@@ -46,7 +42,7 @@ class SyncCommand extends Command
     /**
      * SyncCommand constructor.
      *
-     * @param \Para\Service\Sync\FileSyncerInterface $fileSyncer
+     * @param \Para\Plugin\Sync\FileSyncerInterface $fileSyncer
      *   The git file syncer.
      * @param \Para\Configuration\ProjectConfigurationInterface $projectConfiguration
      *   The project configuration.

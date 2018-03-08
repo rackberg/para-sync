@@ -7,7 +7,6 @@ use Para\Plugin\Event\ApplyPatchEvent;
 use Para\Plugin\Event\CompareHunksEvent;
 use Para\Plugin\Event\FinishedCopyEvent;
 use Para\Plugin\Event\FinishedSyncEvent;
-use Para\Plugin\Event\HunksNotMatchingEvent;
 use Para\Plugin\Event\StartSyncEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Filesystem\Filesystem;
