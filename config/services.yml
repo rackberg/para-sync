@@ -1,5 +1,4 @@
 services:
-
     para.command.sync:
         class: Para\Plugin\Command\SyncCommand
         arguments:
@@ -8,3 +7,29 @@ services:
             - '@filesystem'
         tags:
             - { name: 'console.command', command: 'sync' }
+
+    para.sync.git_file_syncer:
+        class: Para\Plugin\Service\Sync\GitFileSyncer
+        arguments:
+            - '@event_dispatcher'
+
+    para.approve_patch_apply_event_subscriber:
+        class: Para\Plugin\EventSubscriber\ApprovePatchApplyEventSubscriber
+        tags:
+            - { name: 'kernel.event_subscriber' }
+
+    para.sync_event_subscriber:
+        class: Para\Plugin\EventSubscriber\SyncSubscriber
+        tags:
+            - { name: 'kernel.event_subscriber' }
+
+    para.compare_hunks_subscriber:
+        class: Para\Plugin\EventSubscriber\CompareHunksSubscriber
+        tags:
+            - { name: 'kernel.event_subscriber' }
+
+    para.find_project_event_subscriber:
+        class: Para\EventSubscriber\FindProjectSubscriber
+        arguments: ['@para.yaml.configuration_manager']
+        tags:
+            - { name: 'kernel.event_subscriber' }
